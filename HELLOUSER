@@ -1,0 +1,25 @@
+package board1program;
+
+import java.util.Scanner;
+
+public class Hellouser {
+
+
+	String userName;
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Hellouser user = new Hellouser();
+		user.userName = scanner.next();
+		System.out.println("Hello " + user.toString());
+		scanner.close();
+	}
+
+	@Override
+	public String toString() {
+		return this.userName;
+	}
+}
+		
+		
+
