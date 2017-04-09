@@ -1,0 +1,20 @@
+package board2program;
+
+import java.util.Scanner;
+
+public class Leastcommonmultiple {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("ENTER THE FIRST NUMBER");
+		int n1=sc.nextInt();
+		System.out.println("ENTER THE SECOND NUMBER");
+		int n2=sc.nextInt();
+		int commonmultiple=(n1>n2)?n1:n2;
+		if(commonmultiple%n1==0&&commonmultiple%n2==0)
+			{
+				System.out.println("common multiple="+commonmultiple);
+				sc.close();
+			}
+		}
+}
